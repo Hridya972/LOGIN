@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth UI - Dark Mode + Lottie</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+</head>
+<body>
+
+<!-- Dark Mode Toggle -->
+<div class="theme-toggle">
+    <input type="checkbox" id="themeSwitch">
+    <label for="themeSwitch" class="toggle">
+        <span class="circle"></span>
+    </label>
+</div>
+
+<div class="auth-container">
+    <div class="forms">
+        
+        <!-- Login Form -->
+        <div class="form login-form active">
+            <h2>Welcome Back</h2>
+
+            <div class="lottie-box" id="loginAnim"></div>
+
+            <div class="input-group">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <button class="btn">Login</button>
+
+            <p class="switch">Don’t have an account? <span id="showSignup">Sign Up</span></p>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form signup-form">
+            <h2>Create Account</h2>
+
+            <div class="lottie-box" id="signupAnim"></div>
+
+            <div class="input-group">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <button class="btn">Sign Up</button>
+
+            <p class="switch">Already have an account? <span id="showLogin">Login</span></p>
+        </div>
+
+    </div>
+
+    <div class="slider">
+        <div class="slider-panel left">
+            <h1>Hello, Friend!</h1>
+            <p>Create your account and start your journey with us.</p>
+            <button id="slideSignup">Sign Up</button>
+        </div>
+
+        <div class="slider-panel right">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us, please login with your info.</p>
+            <button id="slideLogin">Login</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
